@@ -26,9 +26,11 @@ class SplashScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.txt.setOnClickListener {
             findNavController().navigate(R.id.action_splashScreenFragment_to_logSignFragment)
         }
+
     }
 
 
