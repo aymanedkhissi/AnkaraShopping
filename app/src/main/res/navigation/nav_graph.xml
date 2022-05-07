@@ -22,10 +22,22 @@
         <action
             android:id="@+id/action_logSignFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_logSignFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="fr.aymane.dkhissi.ankarashopping.ui.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="fr.aymane.dkhissi.ankarashopping.ui.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
 </navigation>

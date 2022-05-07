@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700870602687",
+    "project_id": "ankarashopping-a78fc",
+    "storage_bucket": "ankarashopping-a78fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700870602687:android:7605f83c147a0c21cb7b0a",
+        "android_client_info": {
+          "package_name": "fr.aymane.dkhissi.ankarashopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700870602687-8d3qid4v6k9e1gnrj8jce88hm3hfu306.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClUt5pC7RBJ4n94ElKhemFMBE5TNZiYlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700870602687-8d3qid4v6k9e1gnrj8jce88hm3hfu306.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

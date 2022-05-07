@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.FirebaseApp
 import fr.aymane.dkhissi.ankarashopping.R
 import fr.aymane.dkhissi.ankarashopping.databinding.FragmentSplashScreenBinding
 
@@ -14,6 +15,10 @@ class SplashScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentSplashScreenBinding
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
