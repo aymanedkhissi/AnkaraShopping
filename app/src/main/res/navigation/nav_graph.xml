@@ -39,5 +39,27 @@
         android:id="@+id/feedFragment"
         android:name="fr.aymane.dkhissi.ankarashopping.ui.FeedFragment"
         android:label="fragment_feed"
-        tools:layout="@layout/fragment_feed" />
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_myBasketFragment"
+            app:destination="@id/myBasketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBasketFragment"
+        android:name="fr.aymane.dkhissi.ankarashopping.ui.MyBasketFragment"
+        android:label="fragment_my_basket"
+        tools:layout="@layout/fragment_my_basket" >
+        <action
+            android:id="@+id/action_myBasketFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="fr.aymane.dkhissi.ankarashopping.ui.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="totalPrice"
+            app:argType="long" />
+    </fragment>
 </navigation>
